@@ -1,0 +1,15 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Transform",
+    "keyBindingCategoryKey": "aom",
+    "onKeyPressed": {
+      "name": "NewTransformOnKey"
+    },
+    "onKeyReleased": {
+      "name": "ProcedureTransform"
+    }
+  }
+}

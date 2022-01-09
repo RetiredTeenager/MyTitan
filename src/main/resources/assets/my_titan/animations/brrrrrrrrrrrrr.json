@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"spin": {
+			"loop": true,
+			"animation_length": 1.04,
+			"override_previous_animation": true,
+			"bones": {
+				"rock": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.52": {
+							"vector": [360, -360, 360]
+						},
+						"1.04": {
+							"vector": [-360, 360, -360]
+						}
+					}
+				}
+			}
+		}
+	}
+}

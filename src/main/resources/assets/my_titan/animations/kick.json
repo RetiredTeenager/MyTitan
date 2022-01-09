@@ -1,0 +1,138 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kickplaceboomboomR": {
+			"animation_length": 7.92,
+			"bones": {
+				"rightlegc": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.24": {
+							"vector": [40, 0, 0]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						},
+						"7.92": {
+							"vector": [-22.5, 0, 0]
+						}
+					}
+				},
+				"upperrightlegc": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.24": {
+							"vector": [0, 0, 0]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						},
+						"7.92": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					},
+					"scale": {
+						"vector": [1, 1, 1]
+					}
+				},
+				"rihgtlowerlegsc": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.24": {
+							"vector": [35, 0, -5]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"6.24": {
+							"vector": [0, 18, -5]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"kickplaceboomboomL": {
+			"animation_length": 9.92,
+			"bones": {
+				"leftlegc": {
+					"rotation": {
+						"0.0": {
+							"vector": [2.5, 0, 0]
+						},
+						"6.24": {
+							"vector": [40, 0, 0]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						},
+						"7.92": {
+							"vector": [-22.5, 0, 0]
+						},
+						"8.84": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					}
+				},
+				"upperleftlegc": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.24": {
+							"vector": [0, 0, 0]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						},
+						"7.92": {
+							"vector": [0, 0, 0]
+						},
+						"8.84": {
+							"vector": [0, 0, 0]
+						},
+						"9.56": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"leftlowerlegsc": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.24": {
+							"vector": [35, 0, -5]
+						},
+						"7.44": {
+							"vector": [0, 0, 0]
+						},
+						"7.92": {
+							"vector": [0, 0, 0]
+						},
+						"8.84": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 18, -5]
+					}
+				}
+			}
+		}
+	}
+}

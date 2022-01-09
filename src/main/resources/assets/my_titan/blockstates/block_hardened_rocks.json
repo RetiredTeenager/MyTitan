@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "my_titan:block/block_hardened_rocks"
+    }
+  }
+}

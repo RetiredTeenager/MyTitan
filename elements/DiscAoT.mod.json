@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "attackontitansong",
+    "name": "Music Disc",
+    "description": "Hiroyuki Sawano - Shingeki no Kyojin",
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "music": {
+      "value": "CUSTOM:aotsong"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

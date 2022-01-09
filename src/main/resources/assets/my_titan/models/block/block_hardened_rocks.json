@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "up": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "north": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "east": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "south": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "west": "my_titan:blocks/4_26_2021_5_14_06_pm",
+    "particle": "my_titan:blocks/4_26_2021_5_14_06_pm"
+  }
+}

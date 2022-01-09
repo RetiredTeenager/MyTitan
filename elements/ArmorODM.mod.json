@@ -1,0 +1,59 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": true,
+    "textureLeggings": "odmicon",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onLeggingsTick": {
+      "name": "ArmorODMLeggingsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "armorTextureFile": "poop",
+    "helmetName": "Armor ODM Helmet",
+    "bodyName": "Armor ODM Body",
+    "leggingsName": "3DM Gear",
+    "bootsName": "Armor ODM Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [
+      "Three Dimensional Manuever Gear"
+    ],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "ModelGearODM",
+    "leggingsModelPartL": "odm",
+    "leggingsModelPartR": "odm",
+    "leggingsModelTexture": "layer_2.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "CUSTOM:inventorysfxcarttitan"
+    },
+    "repairItems": []
+  }
+}

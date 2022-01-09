@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_titan:item_my_titan_logo"
+    },
+    "title": {
+      "translate": "advancements.advancement_all_titans.title"
+    },
+    "description": {
+      "translate": "advancements.advancement_all_titans.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advancement_all_titans": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "my_titan:advancement_on_join"
+}

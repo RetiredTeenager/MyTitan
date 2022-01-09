@@ -1,0 +1,39 @@
+{
+  "group": "my_titan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "my_titan:item_odm_rope"
+    },
+    "2": {
+      "item": "my_titan:item_odm_rope"
+    },
+    "3": {
+      "item": "my_titan:item_odm_rope"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "my_titan:item_odm_rope"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "my_titan:armor_odm_leggings",
+    "count": 1
+  }
+}

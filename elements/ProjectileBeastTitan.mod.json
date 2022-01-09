@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "bulletitem",
+    "customModelName": "Normal",
+    "name": "Rock Launcher",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.5,
+    "bulletDamage": 20.0,
+    "bulletKnockback": 25,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ItemMiniGunPellets"
+    },
+    "bulletModel": "ModelRock",
+    "customBulletModelTexture": "rock.png",
+    "onBulletHitsBlock": {
+      "name": "ProjectileBeastTitanBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "ProjectileBeastTitanBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "ProjectileBeastTitanBulletHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "ProjectileBeastTitanWhileBulletFlyingTick"
+    }
+  }
+}

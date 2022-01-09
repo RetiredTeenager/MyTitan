@@ -1,0 +1,39 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "1037997_1378072406256_262_284",
+    "customModelName": "Normal",
+    "name": "Minigun",
+    "specialInfo": [
+      "Can be mounted onto the Cart Titan"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:ItemMiniGunPellets"
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "CUSTOM:minigun"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.5,
+    "bulletPower": 3.0,
+    "bulletDamage": 0.5,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ItemMiniGunPellets"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

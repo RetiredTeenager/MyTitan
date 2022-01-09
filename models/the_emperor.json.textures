@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gun"
+      },
+      "name": "default"
+    },
+    "mapping": {
+      "map": {
+        "0": "gun"
+      },
+      "name": "mapping"
+    }
+  }
+}

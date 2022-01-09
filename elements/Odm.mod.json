@@ -1,0 +1,15 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Odm",
+    "keyBindingCategoryKey": "aom",
+    "onKeyPressed": {
+      "name": "ODMGear"
+    },
+    "onKeyReleased": {
+      "name": "Gravity"
+    }
+  }
+}

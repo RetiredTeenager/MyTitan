@@ -1,0 +1,663 @@
+{
+  "_fv": 18,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme"
+          },
+          "name": "1.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme2"
+          },
+          "name": "2.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme3"
+          },
+          "name": "3.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme4"
+          },
+          "name": "4.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme5"
+          },
+          "name": "5.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme6"
+          },
+          "name": "6.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme7"
+          },
+          "name": "7.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme8"
+          },
+          "name": "8.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme9"
+          },
+          "name": "9.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme10"
+          },
+          "name": "10.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme11"
+          },
+          "name": "11.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme12"
+          },
+          "name": "12.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme13"
+          },
+          "name": "13.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme14"
+          },
+          "name": "14.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme15"
+          },
+          "name": "15.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme16"
+          },
+          "name": "16.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme17"
+          },
+          "name": "17.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme18"
+          },
+          "name": "18.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme19"
+          },
+          "name": "19.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme20"
+          },
+          "name": "20.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme21"
+          },
+          "name": "21.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme22"
+          },
+          "name": "22.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "23.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme23"
+          },
+          "name": "23.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "24.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme24"
+          },
+          "name": "24.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "25.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme25"
+          },
+          "name": "25.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "26.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme26"
+          },
+          "name": "26.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "27.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme27"
+          },
+          "name": "27.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "28.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme28"
+          },
+          "name": "28.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "29.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme29"
+          },
+          "name": "29.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "30.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme30"
+          },
+          "name": "30.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "31.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme31"
+          },
+          "name": "31.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "32.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme32"
+          },
+          "name": "32.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "33.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme33"
+          },
+          "name": "33.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "34.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme34"
+          },
+          "name": "34.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "35.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme35"
+          },
+          "name": "35.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "36.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme36"
+          },
+          "name": "36.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "37.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme37"
+          },
+          "name": "37.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "38.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme38"
+          },
+          "name": "38.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "39.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme39"
+          },
+          "name": "39.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "40.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme40"
+          },
+          "name": "40.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "41.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme41"
+          },
+          "name": "41.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "42.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme42"
+          },
+          "name": "42.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "43.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme43"
+          },
+          "name": "43.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "44.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme44"
+          },
+          "name": "44.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "45.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme45"
+          },
+          "name": "45.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "46.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme46"
+          },
+          "name": "46.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "47.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme47"
+          },
+          "name": "47.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "48.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme48"
+          },
+          "name": "48.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "49.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme49"
+          },
+          "name": "49.png",
+          "x": 195,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "50.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Killme50"
+          },
+          "name": "50.png",
+          "x": 195,
+          "y": 188
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "OverlayifTitan"
+    }
+  }
+}

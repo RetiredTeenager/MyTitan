@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc4",
+    "name": "Music Disc",
+    "description": "Linked Horizon - Shoukei to Shikabane no Michi",
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "music": {
+      "value": "CUSTOM:s3intro2"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

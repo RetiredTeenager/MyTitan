@@ -1,0 +1,25 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Raw Titan Serum",
+    "effectName": "Titanic Energy",
+    "icon": "electricparticle.png",
+    "color": {
+      "value": -6749953,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PotionRawTitanSerumPotionStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "PotionRawTitanSerumOnPotionActiveTick"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc5",
+    "name": "Music Disc",
+    "description": "Yoshiki - Red Swan",
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "music": {
+      "value": "CUSTOM:s3intro1"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

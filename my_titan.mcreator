@@ -1,0 +1,4823 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "KeyBindingTransform",
+      "type": "keybind",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_binding_transform",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "ProcedureTransform",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "AttackTitanTransform",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "attack_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "ParticlesAttackTitan",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particles_attack_titan",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "EntityControllableAttackTitan",
+      "type": "mob",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_attack_titan",
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "DiscIntro1",
+      "type": "musicdisc",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_1",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscIntro2",
+      "type": "musicdisc",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_2",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscIntro3",
+      "type": "musicdisc",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_3",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscIntro4",
+      "type": "musicdisc",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_4",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscIntro5",
+      "type": "musicdisc",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_5",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscIntro6",
+      "type": "musicdisc",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_6",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "CreativeTabMyTitan",
+      "type": "tab",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creative_tab_my_titan",
+      "path": "~/Misc"
+    },
+    {
+      "name": "GuiTitanSelection",
+      "type": "gui",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_titan_selection",
+      "path": "~/Titans"
+    },
+    {
+      "name": "KeyBindOpenSelectionGUIOnKeyPressed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_open_selection_gui_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "KeyBindOpenSelectionGUI",
+      "type": "keybind",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_open_selection_gui",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "TitanCheckAttack",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckFemale",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_female",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckColossus",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_colossus",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckArmored",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_armored",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckBeast",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_beast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckCart",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_cart",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckJaw",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_jaw",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckFounding",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_founding",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "TitanCheckWarhammer",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_check_warhammer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "JawTitanTransform",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jaw_titan_transform",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "FoundingTitanTransform",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "founding_titan_transform",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Titans/Founding Titan"
+    },
+    {
+      "name": "WarHammerTransform",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "war_hammer_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Warhammer Titan"
+    },
+    {
+      "name": "EntityControllableFemaleTitan",
+      "type": "mob",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_female_titan",
+      "path": "~/Titans/Female Titan"
+    },
+    {
+      "name": "FemaleTitanTransform",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "female_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Female Titan"
+    },
+    {
+      "name": "KeyBindHealOnKeyPressed",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_heal_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "KeyBindHeal",
+      "type": "keybind",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_heal",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AutoUnlockTitanAttackRightClickedInAir",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_attack_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AutoUnlockTitanAttack",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_attack",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanFemale",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_female",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanFemaleRightClickedInAir",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_female_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "EntityControllableColossalTitan",
+      "type": "mob",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_colossal_titan",
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "AutoUnlockTitanColossal",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_colossal",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanColossalRightClickedInAir",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_colossal_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "ColossalTitanTransform",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colossal_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "EntityControllableColossalTitanOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_colossal_titan_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "ColossalTitanAbilities",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colossal_titan_abilities",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "ColossalTitanEnable2ndAbility",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colossal_titan_enable_2nd_ability",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "ColossalTitan2ndAbilityStop",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colossal_titan_2nd_ability_stop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "KeyBindingTitan2ndaryAbility",
+      "type": "keybind",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_binding_titan_2ndary_ability",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "DiscYouSeeBigGirl",
+      "type": "musicdisc",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_you_see_big_girl",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "CartTitanGUI",
+      "type": "gui",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cart_titan_gui",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "EntityControllableCartTitan",
+      "type": "mob",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_cart_titan",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ItemMiniGunPellets",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_mini_gun_pellets",
+      "path": "~/Items"
+    },
+    {
+      "name": "WeaponCartTitanMinigun",
+      "type": "gun",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weapon_cart_titan_minigun",
+      "path": "~/Items"
+    },
+    {
+      "name": "ItemSaddleCartTitan",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_saddle_cart_titan",
+      "path": "~/Items"
+    },
+    {
+      "name": "EntityControllableCartTitanRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_cart_titan_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanTransform",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cart_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "EntityControllableCartTitanOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_cart_titan_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "AutoUnlockTitanCart",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_cart",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanCartRightClickedInAir",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_cart_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "KeyTitanPrimaryAttack",
+      "type": "keybind",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_titan_primary_attack",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "KeyBindingTitanPrimaryAbility",
+      "type": "keybind",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_binding_titan_primary_ability",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "EntityControllableArmoredTitan",
+      "type": "mob",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_armored_titan",
+      "path": "~/Titans/Armored Titan"
+    },
+    {
+      "name": "CartTitanGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cart_titan_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ArmoredTitanTransform",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armored_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Armored Titan"
+    },
+    {
+      "name": "AutoUnlockTitanArmored",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_armored",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanArmoredRightClickedInAir",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_armored_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "CartTitanGUIThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cart_titan_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "KeyTitanPrimaryAttackOnKeyPressed",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_titan_primary_attack_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "KeyBindDetransformOnKeyPressed",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_detransform_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "KeyBindDetransform",
+      "type": "keybind",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "key_bind_detransform",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "DiscAshes",
+      "type": "musicdisc",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_ashes",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "DiscAoT",
+      "type": "musicdisc",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_ao_t",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "NewTransformOnKey",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "new_transform_on_key",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "ProcedurePariclesTransformAndSound",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_paricles_transform_and_sound",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "EntityControllableCartTitanOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_cart_titan_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "ParticleTransformation",
+      "type": "particle",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_transformation",
+      "path": "~/Misc"
+    },
+    {
+      "name": "RecipeMinigunBullets",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_minigun_bullets",
+      "path": "~/Misc"
+    },
+    {
+      "name": "EntityControllableBeastTitan",
+      "type": "mob",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_beast_titan",
+      "path": "~/Titans/Beast Titan"
+    },
+    {
+      "name": "ProjectileBeastTitan",
+      "type": "gun",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "projectile_beast_titan",
+      "path": "~/Items"
+    },
+    {
+      "name": "ProjectileBeastTitanWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "projectile_beast_titan_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "ProjectileBeastTitanBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "projectile_beast_titan_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titan"
+    },
+    {
+      "name": "BeastTitanTransform",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beast_titan_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titan"
+    },
+    {
+      "name": "AutoUnlockTitanBeast",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_beast",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanBeastRightClickedInAir",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_beast_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "ProcedureBeastTitanRockThrowMain",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_beast_titan_rock_throw_main",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titan"
+    },
+    {
+      "name": "ArmorScoutOriginal",
+      "type": "armor",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armor_scout_original",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "AutoUnlockTitanWarhammer",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_warhammer",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanJaw",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_jaw",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanWarhammerRightClickedInAir",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_warhammer_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "AutoUnlockTitanJawRightClickedInAir",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_jaw_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "AutoUnlockTitanFounding",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_founding",
+      "path": "~/Items"
+    },
+    {
+      "name": "AutoUnlockTitanFoundingRightClickedInAir",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "auto_unlock_titan_founding_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "EmptySyringe",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_syringe",
+      "path": "~/Items"
+    },
+    {
+      "name": "BlockHardenedRocks",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_hardened_rocks",
+      "path": "~/Misc"
+    },
+    {
+      "name": "EntityControllableWarhammerTitan",
+      "type": "mob",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_controllable_warhammer_titan",
+      "path": "~/Titans/Warhammer Titan"
+    },
+    {
+      "name": "ProcedureWarhammerSpikesAttack",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_warhammer_spikes_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Warhammer Titan"
+    },
+    {
+      "name": "BlockHardenedRocksEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_hardened_rocks_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "ProcedureAttackTitanIcon",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_attack_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureFemaleTitanIcon",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_female_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureArmoredTitanIcon",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_armored_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureBeastTitanIcon",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_beast_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureCartItanIcon",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_cart_itan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureWarhammerTitanIcon",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_warhammer_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureColossalTitanIcon",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_colossal_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureJawTitanIcon",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_jaw_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "ProcedureFoundingTitanIcon",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_founding_titan_icon",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titan Checks"
+    },
+    {
+      "name": "EntityCartSeatOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_cart_seat_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "EntityCartSeatOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_cart_seat_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "EntityCartSeat",
+      "type": "mob",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_cart_seat",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ItemMyTitanLogo",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_my_titan_logo",
+      "path": "~/Items"
+    },
+    {
+      "name": "EntityCartSeatEntityDies",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_cart_seat_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ProcedureCartTitanChanged",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_cart_titan_changed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ProcedureCartTitanRemoved",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_cart_titan_removed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanGUIWhileThisGUIIsOpenTick1",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cart_titan_gui_while_this_gui_is_open_tick_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "ArmorScoutsNew",
+      "type": "armor",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armor_scouts_new",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ProcedureOnGameLoaded",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_on_game_loaded",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "ProcedureOnJoinedWorld",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_on_joined_world",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "AdvancementOnJoin",
+      "type": "achievement",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "advancement_on_join",
+      "path": "~/Misc"
+    },
+    {
+      "name": "ProcedureAddPoints",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_add_points",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit"
+    },
+    {
+      "name": "GuiTitanSelectionThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_titan_selection_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "OverlayShifter",
+      "type": "overlay",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "overlay_shifter",
+      "path": "~/PointsShit"
+    },
+    {
+      "name": "AttackRide",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "attack_ride",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "TitanJumping",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titan_jumping",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans"
+    },
+    {
+      "name": "Killme",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme2",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme3",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme4",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_4",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme5",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_5",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme6",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_6",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme7",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_7",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme8",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_8",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme9",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_9",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme10",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_10",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme11",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_11",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme12",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_12",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme13",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_13",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme14",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_14",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme15",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_15",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme16",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_16",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme17",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_17",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme18",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_18",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme19",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_19",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme20",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_20",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme21",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_21",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme22",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_22",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme23",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_23",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme24",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_24",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme25",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_25",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme26",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_26",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme27",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_27",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme28",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_28",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme29",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_29",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme30",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_30",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme31",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_31",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme32",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_32",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme33",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_33",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme34",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_34",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme35",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_35",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme36",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_36",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme37",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_37",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme38",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_38",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme39",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_39",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme40",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_40",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme41",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_41",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme42",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_42",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme43",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_43",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme44",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_44",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme45",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_45",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme46",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_46",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme47",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_47",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme48",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_48",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme49",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_49",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Killme50",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killme_50",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade0",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_0",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade1",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_1",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade2",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade3",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade4",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_4",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade5",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_5",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade6",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_6",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade7",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_7",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade8",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_8",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade9",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_9",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade10",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_10",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade11",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_11",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade12",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_12",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade13",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_13",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade14",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_14",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade15",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_15",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade16",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_16",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade17",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_17",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade18",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_18",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "Fade19",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fade_19",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit/PointsCheckLmao"
+    },
+    {
+      "name": "PointsCommand",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "points_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit"
+    },
+    {
+      "name": "Points",
+      "type": "command",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "points",
+      "path": "~/PointsShit"
+    },
+    {
+      "name": "OverlayifTitan",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "overlayif_titan",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PointsShit"
+    },
+    {
+      "name": "ColossalRide",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "colossal_ride",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Colossal Titan"
+    },
+    {
+      "name": "AdvancementAllTitans",
+      "type": "achievement",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "advancement_all_titans",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PotionRawTitanSerum",
+      "type": "potion",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_raw_titan_serum",
+      "path": "~/Items"
+    },
+    {
+      "name": "PotionRawTitanSerumPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_raw_titan_serum_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "ProcedureAllTitans",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "procedure_all_titans",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "PotionRawTitanSerumOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "potion_raw_titan_serum_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "ODMGear",
+      "type": "procedure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "odm_gear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "Odm",
+      "type": "keybind",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "odm",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "Gravity",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "ItemODMRope",
+      "type": "item",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_odm_rope",
+      "path": "~/Items"
+    },
+    {
+      "name": "RecipeODMGear",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_odm_gear",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "ArmorODM",
+      "type": "armor",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armor_odm",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "RecipeReinforcedString",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_reinforced_string",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "RecipeWire",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_wire",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "ReinforedString",
+      "type": "item",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinfored_string",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "ToolTitanBlades",
+      "type": "tool",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tool_titan_blades",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ToolTitanBladesEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tool_titan_blades_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GunMauserC96",
+      "type": "gun",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun_mauser_c_96",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GluttonousTitan",
+      "type": "mob",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gluttonous_titan",
+      "path": "~/Titans/Mindless Titans/Gluttonous Titan"
+    },
+    {
+      "name": "MindlessOnlyMoveInDaytime",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mindless_only_move_in_daytime",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Mindless Titans"
+    },
+    {
+      "name": "ParticleWire",
+      "type": "particle",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_wire",
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "ODMBackup",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "odm_backup",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/3DM Gear"
+    },
+    {
+      "name": "BiomesGiantTrees",
+      "type": "biome",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "biomes_giant_trees"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "selectedTitan",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "hasTitanAttack",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanColossus",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanFemale",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanArmored",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanCart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanBeast",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanWarHammer",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanJaw",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasTitanFounding",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isColossalAbilityOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isTransformAnimationOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isTransformed",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TitanJump",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "transformationCooldownTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "isSaluting",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isCartMinigunOn",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "getCartCoordsX",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "getCartCoordsY",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "getCartCoordsZ",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "hasCartMinigunSpawned",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "isShifter",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "energyPoints",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "energyPointsVisual",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "Test"
+    },
+    {
+      "name": "hasOdmOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasslept",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "haswokenup",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "s2intro",
+      "files": [
+        "s2intro"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "s1intro2",
+      "files": [
+        "s1intro2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "s1intro1",
+      "files": [
+        "s1intro"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "s3intro1",
+      "files": [
+        "s3intro"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "s3intro2",
+      "files": [
+        "s3intro2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "attacktitanerentransform",
+      "files": [
+        "attack_titan_eren_roar_sound_effect"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "titalselectionsmusic",
+      "files": [
+        "titanselectionguisfx"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "heartbeat",
+      "files": [
+        "heartbeatsfx"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "femaletitanroar",
+      "files": [
+        "femaletitanscream"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "healingsfx",
+      "files": [
+        "healing"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "colossaltitanroar",
+      "files": [
+        "colossustitanroar"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "useebiggirl",
+      "files": [
+        "youseebiggirl"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "armoredtitantransform",
+      "files": [
+        "armoredtitanroar"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "inventorysfxcarttitan",
+      "files": [
+        "inventoryopen"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "titanfootsteps",
+      "files": [
+        "titanfootsteps"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "ashesonthefire",
+      "files": [
+        "ashesonthefire"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "s4intro",
+      "files": [
+        "mywar"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "aotsong",
+      "files": [
+        "aot"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "minigun",
+      "files": [
+        "minigun_sound_effect"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "beasttitanroar",
+      "files": [
+        "beasttitanroar"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "electricity",
+      "files": [
+        "electricity"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "rocks",
+      "files": [
+        "rocks"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "sasageyo",
+      "files": [
+        "sasageyo"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "generictransform",
+      "files": [
+        "shiftingsfx"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "sword",
+      "files": [
+        "swordhit"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mauser",
+      "files": [
+        "gun"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.my_titan.gluttonous_titan": "Gluttonous Titan",
+      "item.my_titan.entity_controllable_beast_titan_spawn_egg": "Beast Titan Spawn Egg",
+      "key.my_titan.titan_jump": "Titan Jump",
+      "item.watashi_no_kyojin.entity_controllable_colossal_titan_spawn_egg": "Colossal TItan Spawn Egg",
+      "item.my_titan.auto_unlock_titan_armored": "Titan Serum",
+      "subtitles.s2intro": "",
+      "item.my_titan.armor_scout_original_boots": "Scout\u0027s Boots",
+      "item.minecraft.tipped_arrow.effect.potion_raw_titan_serum": "Arrow of Raw Titan Serum",
+      "subtitles.ashesonthefire": "",
+      "item.my_titan.auto_unlock_titan_colossal": "Titan Serum",
+      "item.my_titan.armor_scouts_new_leggings": "Armor Scouts New Leggings",
+      "biome.my_titan.biomes_giant_trees": "Forest of Giant Trees",
+      "subtitles.armoredtitantransform": "",
+      "key.my_titan.key_binding_titan_2ndary_ability": "Seconday Titan Ability",
+      "key.mcreator.key_bind_heal": "Regenerate",
+      "subtitles.aotsong": "",
+      "death.attack.hardspikes": "%1$s was spiked by the Warhammer Titan",
+      "item.my_titan.armor_odm_chestplate": "Armor ODM Body",
+      "item.my_titan.disc_intro_1.desc": "Linked Horizon  - Guren no Yumiya",
+      "key.my_titan.key_binding_titan_primary_ability": "Primary Titan Ability",
+      "subtitles.femaletitanroar": "",
+      "entity.my_titan.entity_controllable_warhammer_titan": "Warhammer Titan",
+      "subtitles.minigun": "",
+      "subtitles.s3intro2": "",
+      "item.watashi_no_kyojin.entity_controllable_attack_titan_spawn_egg": "Attack Titan Spawn Egg",
+      "item.watashi_no_kyojin.item_mini_gun_pellets": "Item Mini Gun Pellets",
+      "item.my_titan.auto_unlock_titan_female": "Titan Serum",
+      "subtitles.s3intro1": "",
+      "item.watashi_no_kyojin.disc_you_see_big_girl": "Music Disc",
+      "entity.watashi_no_kyojin.entity_controllable_female_titan": "Female Titan",
+      "item.my_titan.gun_mauser_c_96": "Mauser C96",
+      "subtitles.useebiggirl": "",
+      "entity.watashi_no_kyojin.entity_controllable_cart_titan": "Cart Titan",
+      "subtitles.genertictransform": "",
+      "subtitles.heartbeat": "",
+      "item.my_titan.disc_you_see_big_girl.desc": "Hiroyuki Sawano - YOUSEEBIGGIRL/T:T",
+      "item.my_titan.disc_intro_3.desc": "Linked Horizon - Shinzou wo Sasageyo!",
+      "item.my_titan.item_odm_rope": "Manuevering Wire",
+      "key.my_titan.key_bind_heal": "Regenerate",
+      "item.minecraft.potion.effect.potion_raw_titan_serum": "Raw Titan Serum",
+      "advancements.advancement_all_titans.descr": "You\u0027re no slave. You\u0027re no god. You\u0027re just a person. You don\u0027t need to serve anyone. You can be the one to choose.",
+      "entity.watashi_no_kyojin.entity_controllable_colossal_titan": "Colossal TItan",
+      "entity.my_titan.entity_controllable_beast_titan": "Beast Titan",
+      "item.my_titan.tool_titan_blades": "Iron Blade",
+      "item.watashi_no_kyojin.disc_intro_6.desc": "Shinsei Kamattechan - My War",
+      "item.my_titan.item_mini_gun_pellets": "Machine Gun Pellets",
+      "item.my_titan.armor_scout_original_helmet": "Scout\u0027s Hood",
+      "item.my_titan.armor_odm_helmet": "Armor ODM Helmet",
+      "item.watashi_no_kyojin.auto_unlock_titan_cart": "Cart Titan",
+      "item.my_titan.auto_unlock_titan_warhammer": "Titan Serum",
+      "entity.my_titan.entity_cart_seat": "Minigun",
+      "subtitles.inventorysfxcarttitan": "",
+      "item.my_titan.entity_controllable_attack_titan_spawn_egg": "Attack Titan Spawn Egg",
+      "subtitles.attacktitanerentransform": "",
+      "item.my_titan.armor_odm_leggings": "3DM Gear",
+      "subtitles.generictransform": "",
+      "item.my_titan.empty_syringe": "Empty Syringe",
+      "advancements.advancement_all_titans.title": "The 9 Titans",
+      "item.watashi_no_kyojin.auto_unlock_titan_attack": "Attack Titan",
+      "item.minecraft.lingering_potion.effect.potion_raw_titan_serum": "Lingering Raw Titan Serum",
+      "item.my_titan.item_my_titan_logo": "My Titan",
+      "subtitles.attacktitanroartransform": "",
+      "entity.watashi_no_kyojin.entity_controllable_attack_titan": "Attack Titan",
+      "item.my_titan.gluttonous_titan_spawn_egg": "Gluttonous Titan Spawn Egg",
+      "item.my_titan.disc_intro_5.desc": "Linked Horizon - Shoukei to Shikabane no Michi",
+      "entity.my_titan.entity_controllable_armored_titan": "Armored Titan",
+      "item.my_titan.disc_ao_t": "Music Disc",
+      "item.my_titan.disc_intro_2.desc": "Linked Horizon - Jiyuu no Tsubasan",
+      "item.my_titan.disc_ashes.desc": "Kohta Yamamoto - Ashes on the Fire",
+      "entity.my_titan.entity_controllable_female_titan": "Female Titan",
+      "effect.potion_raw_titan_serum": "Titanic Energy",
+      "key.mcreator.keybind_salute": "Keybind Salute",
+      "subtitles.sword": "",
+      "item.my_titan.disc_intro_1": "Music Disc",
+      "key.mcreator.key_bind_open_selection_gui": "Select Titan",
+      "item.my_titan.disc_intro_2": "Music Disc",
+      "item.watashi_no_kyojin.entity_controllable_female_titan_spawn_egg": "Female Titan Spawn Egg",
+      "item.my_titan.auto_unlock_titan_jaw": "Titan Serum",
+      "item.watashi_no_kyojin.disc_intro_3.desc": "Linked Horizon - Shinzou wo Sasageyo!",
+      "item.my_titan.armor_scouts_new_boots": "Armor Scouts New Boots",
+      "entity.my_titan.entity_controllable_attack_titan": "Attack Titan",
+      "item.my_titan.armor_scout_original_leggings": "Scout\u0027s Leggings",
+      "item.my_titan.disc_you_see_big_girl": "Music Disc",
+      "item.my_titan.entity_controllable_warhammer_titan_spawn_egg": "Warhammer Titan Spawn Egg",
+      "key.my_titan.key_binding_transform": "Transform",
+      "subtitles.youseebiggirl": "",
+      "item.watashi_no_kyojin.disc_you_see_big_girl.desc": "Hiroyuki Sawano - YOUSEEBIGGIRL/T:T",
+      "item.my_titan.disc_ashes": "Music Disc",
+      "itemGroup.tabcreative_tab_my_titan": "My Titan",
+      "item.my_titan.disc_intro_5": "Music Disc",
+      "item.watashi_no_kyojin.auto_unlock_titan_female": "Female Titan",
+      "item.watashi_no_kyojin.item_saddle_cart_titan": "Cart Titan Saddle",
+      "item.my_titan.disc_intro_6": "Music Disc",
+      "item.my_titan.disc_intro_3": "Music Disc",
+      "subtitles.rocks": "",
+      "subtitles.titalselectionsmusic": "",
+      "item.my_titan.disc_intro_4": "Music Disc",
+      "subtitles.healing": "",
+      "subtitles.sasageyo": "",
+      "item.my_titan.armor_scouts_new_chestplate": "Armor Scouts New Body",
+      "key.my_titan.key_bind_detransform": "Detransform",
+      "key.mcreator.key_binding_titan_2ndary_ability": "Seconday Titan Ability",
+      "subtitles.attacktitantransform": "",
+      "item.my_titan.weapon_cart_titan_minigun": "Minigun",
+      "key.mcreator.key_bind_detransform": "Detransform",
+      "key.categories.aom": "My Titan",
+      "key.mcreator.key_binding_titan_primary_ability": "Primary Titan Ability",
+      "item.my_titan.item_saddle_cart_titan": "Cart Titan Saddle",
+      "item.watashi_no_kyojin.disc_intro_1": "Music Disc",
+      "item.watashi_no_kyojin.disc_intro_2.desc": "Linked Horizon - Jiyuu no Tsubasan",
+      "item.my_titan.projectile_beast_titan": "Rock Launcher",
+      "item.watashi_no_kyojin.weapon_cart_titan_minigun": "Cart Titan Minigun",
+      "item.watashi_no_kyojin.disc_intro_4": "Music Disc",
+      "item.my_titan.entity_controllable_armored_titan_spawn_egg": "Armored Titan Spawn Egg",
+      "item.my_titan.armor_scouts_new_helmet": "Armor Scouts New Helmet",
+      "item.watashi_no_kyojin.disc_intro_5": "Music Disc",
+      "item.watashi_no_kyojin.disc_intro_2": "Music Disc",
+      "item.my_titan.armor_odm_boots": "Armor ODM Boots",
+      "item.watashi_no_kyojin.disc_intro_3": "Music Disc",
+      "item.my_titan.disc_intro_6.desc": "Shinsei Kamattechan - My War",
+      "item.watashi_no_kyojin.disc_intro_6": "Music Disc",
+      "item.my_titan.disc_ao_t.desc": "Hiroyuki Sawano - Shingeki no Kyojin",
+      "key.mcreator.key_titan_primary_attack": "Primary Titan Attack",
+      "item.watashi_no_kyojin.disc_intro_5.desc": "Linked Horizon - Shoukei to Shikabane no Michi",
+      "subtitles.healingsfx": "",
+      "subtitles.titanfootsteps": "",
+      "item.watashi_no_kyojin.entity_controllable_cart_titan_spawn_egg": "Cart Titan Spawn Egg",
+      "item.my_titan.disc_intro_4.desc": "Yoshiki - Red Swan",
+      "item.my_titan.reinfored_string": "Reinfored String",
+      "key.mcreator.titan_jump": "Titan Jump",
+      "item.my_titan.entity_controllable_cart_titan_spawn_egg": "Cart Titan Spawn Egg",
+      "entity.my_titan.entity_controllable_cart_titan": "Cart Titan",
+      "advancements.advancement_on_join.title": "My Titan",
+      "item.my_titan.auto_unlock_titan_founding": "Titan Serum",
+      "item.minecraft.splash_potion.effect.potion_raw_titan_serum": "Splash Raw Titan Serum",
+      "subtitles.s4intro": "",
+      "subtitles.colossaltitanroar": "",
+      "item.my_titan.auto_unlock_titan_cart": "Titan Serum",
+      "item.my_titan.auto_unlock_titan_beast": "Titan Serum",
+      "item.my_titan.armor_scout_original_chestplate": "Scout\u0027s Cape",
+      "subtitles.colossalscream": "",
+      "key.my_titan.key_bind_open_selection_gui": "Select Titan",
+      "key.mcreator.key_binding_transform": "Transform",
+      "subtitles.electricity": "",
+      "key.my_titan.keybind_salute": "Keybind Salute",
+      "item.watashi_no_kyojin.disc_intro_1.desc": "Linked Horizon  - Guren no Yumiya",
+      "block.my_titan.block_hardened_rocks": "Hardened Rock",
+      "entity.my_titan.entity_controllable_colossal_titan": "Colossal Titan",
+      "item.watashi_no_kyojin.disc_intro_4.desc": "Yoshiki - Red Swan",
+      "item.my_titan.entity_controllable_colossal_titan_spawn_egg": "Colossal Titan Spawn Egg",
+      "subtitles.beasttitanroar": "",
+      "subtitles.s1intro1": "",
+      "key.my_titan.key_titan_primary_attack": "Primary Titan Attack",
+      "advancements.advancement_on_join.descr": "Thanks for downloading!",
+      "key.my_titan.odm": "Odm",
+      "subtitles.s1intro2": "",
+      "subtitles.mauser": "",
+      "item.watashi_no_kyojin.auto_unlock_titan_colossal": "Colossal Titan",
+      "item.my_titan.auto_unlock_titan_attack": "Titan Serum",
+      "item.my_titan.entity_cart_seat_spawn_egg": "Minigun Spawn Egg",
+      "item.my_titan.entity_controllable_female_titan_spawn_egg": "Female Titan Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": []
+      },
+      {
+        "name": "Music Discs",
+        "children": []
+      },
+      {
+        "name": "Titans",
+        "children": [
+          {
+            "name": "Jaw Titan",
+            "children": []
+          },
+          {
+            "name": "Attack Titan",
+            "children": []
+          },
+          {
+            "name": "Armored Titan",
+            "children": []
+          },
+          {
+            "name": "Founding Titan",
+            "children": []
+          },
+          {
+            "name": "Beast Titan",
+            "children": []
+          },
+          {
+            "name": "Female Titan",
+            "children": []
+          },
+          {
+            "name": "Colossal Titan",
+            "children": []
+          },
+          {
+            "name": "Warhammer Titan",
+            "children": []
+          },
+          {
+            "name": "Cart Titan",
+            "children": []
+          },
+          {
+            "name": "Mindless Titans",
+            "children": [
+              {
+                "name": "Gluttonous Titan",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PointsShit",
+        "children": [
+          {
+            "name": "PointsCheckLmao",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "3DM Gear",
+        "children": []
+      },
+      {
+        "name": "Titan Checks",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Shifters",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "my_titan",
+    "modName": "My Titan",
+    "version": "1.0.0",
+    "description": "An Attack on Titan mod",
+    "author": "KillsBoostMyEgo, RetiredTeenager, Jerremy18",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Programming by KillsBoostMyEgo, Models by RetiredTeenager and Jerremy18",
+    "modElementsPackage": "net.aot.mytitan",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

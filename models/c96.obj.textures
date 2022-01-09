@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_1": "c96_texture"
+      },
+      "name": "default"
+    }
+  }
+}

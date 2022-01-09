@@ -1,0 +1,37 @@
+{
+  "group": "my_titan",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    },
+    {
+      "item": "my_titan:reinfored_string"
+    }
+  ],
+  "result": {
+    "item": "my_titan:item_odm_rope",
+    "count": 1
+  }
+}
