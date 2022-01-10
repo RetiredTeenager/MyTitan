@@ -1,4 +1,5 @@
 {
+  "entity.my_titan.entity_eren_human": "Eren Yeager",
   "entity.my_titan.gluttonous_titan": "Gluttonous Titan",
   "item.my_titan.entity_controllable_beast_titan_spawn_egg": "Beast Titan Spawn Egg",
   "key.my_titan.titan_jump": "Titan Jump",
@@ -111,6 +112,7 @@
   "item.watashi_no_kyojin.disc_intro_2.desc": "Linked Horizon - Jiyuu no Tsubasan",
   "item.my_titan.projectile_beast_titan": "Rock Launcher",
   "item.watashi_no_kyojin.weapon_cart_titan_minigun": "Cart Titan Minigun",
+  "item.my_titan.entity_eren_human_spawn_egg": "Eren Yeager Spawn Egg",
   "item.watashi_no_kyojin.disc_intro_4": "Music Disc",
   "item.my_titan.entity_controllable_armored_titan_spawn_egg": "Armored Titan Spawn Egg",
   "item.my_titan.armor_scouts_new_helmet": "Armor Scouts New Helmet",

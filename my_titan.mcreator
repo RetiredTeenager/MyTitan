@@ -4143,6 +4143,62 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "biomes_giant_trees"
+    },
+    {
+      "name": "IsShifterHealthNotFull",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "is_shifter_health_not_full",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "EntityErenHumanEntityDies",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_eren_human_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EntityErenHumanOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_eren_human_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EntityErenHuman",
+      "type": "mob",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_eren_human",
+      "path": "~/Shifters"
     }
   ],
   "variable_elements": [
@@ -4306,6 +4362,60 @@
       "name": "haswokenup",
       "type": "logic",
       "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "isErenInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isReinerInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isArminInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isAnnieInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isFriedaInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isLaraInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isPorcoInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isPieckInWorld",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isZekeInWorld",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -4521,6 +4631,7 @@
   ],
   "language_map": {
     "en_us": {
+      "entity.my_titan.entity_eren_human": "Eren Yeager",
       "entity.my_titan.gluttonous_titan": "Gluttonous Titan",
       "item.my_titan.entity_controllable_beast_titan_spawn_egg": "Beast Titan Spawn Egg",
       "key.my_titan.titan_jump": "Titan Jump",
@@ -4633,6 +4744,7 @@
       "item.watashi_no_kyojin.disc_intro_2.desc": "Linked Horizon - Jiyuu no Tsubasan",
       "item.my_titan.projectile_beast_titan": "Rock Launcher",
       "item.watashi_no_kyojin.weapon_cart_titan_minigun": "Cart Titan Minigun",
+      "item.my_titan.entity_eren_human_spawn_egg": "Eren Yeager Spawn Egg",
       "item.watashi_no_kyojin.disc_intro_4": "Music Disc",
       "item.my_titan.entity_controllable_armored_titan_spawn_egg": "Armored Titan Spawn Egg",
       "item.my_titan.armor_scouts_new_helmet": "Armor Scouts New Helmet",
@@ -4794,7 +4906,44 @@
       },
       {
         "name": "Shifters",
-        "children": []
+        "children": [
+          {
+            "name": "Eren",
+            "children": []
+          },
+          {
+            "name": "Zeke",
+            "children": []
+          },
+          {
+            "name": "Armin",
+            "children": []
+          },
+          {
+            "name": "Reiner",
+            "children": []
+          },
+          {
+            "name": "Porco",
+            "children": []
+          },
+          {
+            "name": "Frieda",
+            "children": []
+          },
+          {
+            "name": "Lara",
+            "children": []
+          },
+          {
+            "name": "Annie",
+            "children": []
+          },
+          {
+            "name": "Pieck",
+            "children": []
+          }
+        ]
       }
     ]
   },

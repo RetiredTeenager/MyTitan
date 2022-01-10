@@ -1,33 +1,5 @@
 package net.aot.mytitan;
 
-import net.minecraftforge.fml.network.PacketDistributor;
-import net.minecraftforge.fml.network.NetworkEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.util.FakePlayer;
-import net.minecraftforge.common.capabilities.ICapabilitySerializable;
-import net.minecraftforge.common.capabilities.CapabilityManager;
-import net.minecraftforge.common.capabilities.CapabilityInject;
-import net.minecraftforge.common.capabilities.Capability;
-
-import net.minecraft.world.storage.WorldSavedData;
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Direction;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.nbt.INBT;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.Minecraft;
-
 import java.util.function.Supplier;
 
 public class MyTitanModVariables {
@@ -124,6 +96,15 @@ public class MyTitanModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "my_titan_mapvars";
+		public boolean isErenInWorld = false;
+		public boolean isReinerInWorld = false;
+		public boolean isArminInWorld = false;
+		public boolean isAnnieInWorld = false;
+		public boolean isFriedaInWorld = false;
+		public boolean isLaraInWorld = false;
+		public boolean isPorcoInWorld = false;
+		public boolean isPieckInWorld = false;
+		public boolean isZekeInWorld = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -134,10 +115,28 @@ public class MyTitanModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			isErenInWorld = nbt.getBoolean("isErenInWorld");
+			isReinerInWorld = nbt.getBoolean("isReinerInWorld");
+			isArminInWorld = nbt.getBoolean("isArminInWorld");
+			isAnnieInWorld = nbt.getBoolean("isAnnieInWorld");
+			isFriedaInWorld = nbt.getBoolean("isFriedaInWorld");
+			isLaraInWorld = nbt.getBoolean("isLaraInWorld");
+			isPorcoInWorld = nbt.getBoolean("isPorcoInWorld");
+			isPieckInWorld = nbt.getBoolean("isPieckInWorld");
+			isZekeInWorld = nbt.getBoolean("isZekeInWorld");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putBoolean("isErenInWorld", isErenInWorld);
+			nbt.putBoolean("isReinerInWorld", isReinerInWorld);
+			nbt.putBoolean("isArminInWorld", isArminInWorld);
+			nbt.putBoolean("isAnnieInWorld", isAnnieInWorld);
+			nbt.putBoolean("isFriedaInWorld", isFriedaInWorld);
+			nbt.putBoolean("isLaraInWorld", isLaraInWorld);
+			nbt.putBoolean("isPorcoInWorld", isPorcoInWorld);
+			nbt.putBoolean("isPieckInWorld", isPieckInWorld);
+			nbt.putBoolean("isZekeInWorld", isZekeInWorld);
 			return nbt;
 		}
 
