@@ -232,5 +232,14 @@
         "stream": false
       }
     ]
+  },
+  "disk7": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "my_titan:intro7",
+        "stream": true
+      }
+    ]
   }
 }

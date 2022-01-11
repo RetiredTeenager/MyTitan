@@ -44,7 +44,7 @@ public class EntityCartSeatOnEntityTickUpdateProcedure extends MyTitanModElement
 				}
 			}
 		} else {
-			if (!entity.world.isRemote)
+			if (!entity.world.isRemote())
 				entity.remove();
 		}
 	}

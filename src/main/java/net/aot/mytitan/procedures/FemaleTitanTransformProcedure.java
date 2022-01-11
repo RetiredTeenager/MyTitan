@@ -6,6 +6,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.SoundCategory;
@@ -21,6 +22,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
 
 import net.aot.mytitan.entity.EntityControllableFemaleTitanEntity;
@@ -74,11 +76,11 @@ public class FemaleTitanTransformProcedure extends MyTitanModElements.ModElement
 		}
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 9999999, (int) 1, (false), (false)));
-		if (world instanceof World && !world.getWorld().isRemote) {
-			Entity entityToSpawn = new EntityControllableFemaleTitanEntity.CustomEntity(EntityControllableFemaleTitanEntity.entity, world.getWorld());
+		if (world instanceof ServerWorld) {
+			Entity entityToSpawn = new EntityControllableFemaleTitanEntity.CustomEntity(EntityControllableFemaleTitanEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 			world.addEntity(entityToSpawn);
 		}
@@ -90,25 +92,25 @@ public class FemaleTitanTransformProcedure extends MyTitanModElements.ModElement
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) == (true))) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("nice"), (true));
 			}
 		}
-		if (!world.getWorld().isRemote) {
-			world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+		if (world instanceof World && !world.isRemote()) {
+			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:generictransform")),
 					SoundCategory.NEUTRAL, (float) 20, (float) 1);
 		} else {
-			world.getWorld().playSound(x, y, z,
+			((World) world).playSound(x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:generictransform")),
 					SoundCategory.NEUTRAL, (float) 20, (float) 1, false);
 		}
-		if (!world.getWorld().isRemote) {
-			world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+		if (world instanceof World && !world.isRemote()) {
+			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:femaletitanroar")),
 					SoundCategory.NEUTRAL, (float) 20, (float) 1);
 		} else {
-			world.getWorld().playSound(x, y, z,
+			((World) world).playSound(x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:femaletitanroar")),
 					SoundCategory.NEUTRAL, (float) 20, (float) 1, false);
 		}
@@ -117,8 +119,12 @@ public class FemaleTitanTransformProcedure extends MyTitanModElements.ModElement
 		}
 		entity.attackEntityFrom(DamageSource.GENERIC, (float) 19);
 		for (int index0 = 0; index0 < (int) (15); index0++) {
-			if (world instanceof ServerWorld)
-				((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) x, (int) y, (int) z, true));
+			if (world instanceof ServerWorld) {
+				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+				_ent.setEffectOnly(true);
+				((World) world).addEntity(_ent);
+			}
 		}
 	}
 }

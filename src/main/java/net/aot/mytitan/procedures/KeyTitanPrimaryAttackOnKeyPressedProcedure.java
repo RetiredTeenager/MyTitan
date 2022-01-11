@@ -35,12 +35,12 @@ public class KeyTitanPrimaryAttackOnKeyPressedProcedure extends MyTitanModElemen
 				.orElse(new MyTitanModVariables.PlayerVariables())).isTransformed) == (true))) {
 			if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 1)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 2)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -53,7 +53,7 @@ public class KeyTitanPrimaryAttackOnKeyPressedProcedure extends MyTitanModElemen
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 4)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -65,17 +65,17 @@ public class KeyTitanPrimaryAttackOnKeyPressedProcedure extends MyTitanModElemen
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 6)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 7)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 8)) {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("placeholder"), (false));
 				}
 			} else if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)

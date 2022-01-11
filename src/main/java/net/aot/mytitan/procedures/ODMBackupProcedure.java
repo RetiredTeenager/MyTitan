@@ -12,7 +12,6 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.aot.mytitan.item.ArmorODMItem;
 import net.aot.mytitan.MyTitanModElements;
 import net.aot.mytitan.MyTitanMod;
 
@@ -53,9 +52,7 @@ public class ODMBackupProcedure extends MyTitanModElements.ModElement {
 					entity.getEyePosition(1f).add(entity.getLook(1f).x * 50, entity.getLook(1f).y * 50, entity.getLook(1f).z * 50),
 					RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
 			if (((world.isAirBlock(new BlockPos((int) (x), (int) (y), (int) (z)))) == (false))) {
-				if (entity instanceof LivingEntity) {
-					entity.setNoGravity((true));
-				}
+				entity.setNoGravity((true));
 				if (((((x) - (entity.getPosX())) >= 41) && (((z) - (entity.getPosZ())) >= 41))) {
 					entity.setMotion((((x) - (entity.getPosX())) - 35), (((y) - (entity.getPosY())) - (-35)), (((z) - (entity.getPosZ())) - 35));
 				} else if (((((x) - (entity.getPosX())) <= 31) && (((z) - (entity.getPosZ())) <= 31))) {
@@ -87,9 +84,7 @@ public class ODMBackupProcedure extends MyTitanModElements.ModElement {
 					}
 
 					private void run() {
-						if (entity instanceof LivingEntity) {
-							entity.setNoGravity((false));
-						}
+						entity.setNoGravity((false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, (int) 100);

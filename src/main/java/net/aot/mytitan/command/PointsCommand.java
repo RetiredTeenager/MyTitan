@@ -1,8 +1,10 @@
 
 package net.aot.mytitan.command;
 
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.common.util.FakePlayerFactory;
+import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.entity.Entity;
@@ -24,11 +26,12 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 public class PointsCommand extends MyTitanModElements.ModElement {
 	public PointsCommand(MyTitanModElements instance) {
 		super(instance, 201);
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	@Override
-	public void serverLoad(FMLServerStartingEvent event) {
-		event.getCommandDispatcher().register(customCommand());
+	@SubscribeEvent
+	public void registerCommands(RegisterCommandsEvent event) {
+		event.getDispatcher().register(customCommand());
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {

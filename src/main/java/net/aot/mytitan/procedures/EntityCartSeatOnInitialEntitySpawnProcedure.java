@@ -33,9 +33,7 @@ public class EntityCartSeatOnInitialEntitySpawnProcedure extends MyTitanModEleme
 		IWorld world = (IWorld) dependencies.get("world");
 		MyTitanModVariables.WorldVariables.get(world).hasCartMinigunSpawned = (boolean) (true);
 		MyTitanModVariables.WorldVariables.get(world).syncData(world);
-		if (entity instanceof LivingEntity) {
-			entity.setNoGravity((true));
-		}
+		entity.setNoGravity((true));
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 99999, (int) 99999, (false), (false)));
 	}

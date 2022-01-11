@@ -1,29 +1,23 @@
 
 package net.aot.mytitan.entity;
 
-import software.bernie.geckolib.manager.EntityAnimationManager;
-import software.bernie.geckolib.event.AnimationTestEvent;
-import software.bernie.geckolib.entity.IAnimatedEntity;
-import software.bernie.geckolib.animation.controller.EntityAnimationController;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.server.ServerBossInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.BossInfo;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
@@ -34,18 +28,18 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
-import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.aot.mytitan.procedures.EntityControllableCartTitanOnInitialEntitySpawnProcedure;
 import net.aot.mytitan.itemgroup.CreativeTabMyTitanItemGroup;
+import net.aot.mytitan.entity.renderer.EntityControllableFemaleTitanRenderer;
 import net.aot.mytitan.MyTitanModElements;
 
 import java.util.Map;
@@ -53,50 +47,38 @@ import java.util.HashMap;
 
 @MyTitanModElements.ModElement.Tag
 public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("entity_controllable_female_titan").setRegistryName("entity_controllable_female_titan");
 	public EntityControllableFemaleTitanEntity(MyTitanModElements instance) {
 		super(instance, 24);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityControllableFemaleTitanRenderer.ModelRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f))
-						.build("entity_controllable_female_titan").setRegistryName("entity_controllable_female_titan");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10092442, -65485, new Item.Properties().group(CreativeTabMyTitanItemGroup.tab))
 				.setRegistryName("entity_controllable_female_titan_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	@OnlyIn(Dist.CLIENT)
-	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
-				@Override
-				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("my_titan:textures/colossal_titan.png");
-				}
-			};
-			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
-			return customRender;
-		});
+	@Override
+	public void init(FMLCommonSetupEvent event) {
 	}
-	public static class CustomEntity extends MonsterEntity implements IAnimatedEntity {
-		EntityAnimationManager manager = new EntityAnimationManager();
-		EntityAnimationController controller = new EntityAnimationController(this, "controller", 1, this::animationPredicate);
-		private <E extends Entity> boolean animationPredicate(AnimationTestEvent<E> event) {
-			controller.transitionLengthTicks = 1;
-			controller.markNeedsReload();
-			return true;
+	private static class EntityAttributesRegisterHandler {
+		@SubscribeEvent
+		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
+			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 250);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+			event.put(entity, ammma.create());
 		}
+	}
 
-		@Override
-		public EntityAnimationManager getAnimationManager() {
-			return manager;
-		}
-
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -105,7 +87,6 @@ public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModE
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			manager.addAnimationController(controller);
 		}
 
 		@Override
@@ -150,10 +131,10 @@ public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModE
 		}
 
 		@Override
-		public boolean processInteract(PlayerEntity sourceentity, Hand hand) {
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
 			ItemStack itemstack = sourceentity.getHeldItem(hand);
-			boolean retval = true;
-			super.processInteract(sourceentity, hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			super.func_230254_b_(sourceentity, hand);
 			sourceentity.startRiding(this);
 			double x = this.getPosX();
 			double y = this.getPosY();
@@ -182,20 +163,6 @@ public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModE
 		}
 
 		@Override
-		protected void registerAttributes() {
-			super.registerAttributes();
-			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
-			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(250);
-			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
-			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
-				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
-		}
-
-		@Override
 		public boolean isNonBoss() {
 			return false;
 		}
@@ -219,7 +186,7 @@ public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModE
 		}
 
 		@Override
-		public void travel(Vec3d dir) {
+		public void travel(Vector3d dir) {
 			Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 			if (this.isBeingRidden()) {
 				this.rotationYaw = entity.rotationYaw;
@@ -231,10 +198,10 @@ public class EntityControllableFemaleTitanEntity extends MyTitanModElements.ModE
 				this.rotationYawHead = entity.rotationYaw;
 				this.stepHeight = 1.0F;
 				if (entity instanceof LivingEntity) {
-					this.setAIMoveSpeed((float) this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
+					this.setAIMoveSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
 					float forward = ((LivingEntity) entity).moveForward;
 					float strafe = ((LivingEntity) entity).moveStrafing;
-					super.travel(new Vec3d(strafe, 0, forward));
+					super.travel(new Vector3d(strafe, 0, forward));
 				}
 				this.prevLimbSwingAmount = this.limbSwingAmount;
 				double d1 = this.getPosX() - this.prevPosX;

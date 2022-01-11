@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[36,)"
+license="Not specified"
 
 [[mods]]
 modId="my_titan"
@@ -15,15 +16,34 @@ An Attack on Titan mod
 [[dependencies.my_titan]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 
 
 
 [[dependencies.my_titan]]
+    modId="just_enough_items"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.my_titan]]
+    modId="curios"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.my_titan]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.my_titan]]
     modId="geckolib"
     mandatory=false
+    versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 

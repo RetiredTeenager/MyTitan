@@ -27,7 +27,7 @@ public class PotionRawTitanSerumPotionStartedappliedProcedure extends MyTitanMod
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(PotionRawTitanSerumPotion.potion, (int) 300, (int) 1));
-		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You feel energetic"), (false));
 		}
 	}

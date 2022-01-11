@@ -12,7 +12,6 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.aot.mytitan.item.ArmorODMItem;
 import net.aot.mytitan.MyTitanModElements;
 import net.aot.mytitan.MyTitanMod;
 
@@ -54,9 +53,7 @@ public class ODMGearProcedure extends MyTitanModElements.ModElement {
 					RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
 			if (((world.isAirBlock(new BlockPos((int) (x), (int) (y), (int) (z)))) == (false))) {
 				if ((((x) - (entity.getPosX())) <= 75)) {
-					if (entity instanceof LivingEntity) {
-						entity.setNoGravity((true));
-					}
+					entity.setNoGravity((true));
 					if (((((x) - (entity.getPosX())) >= 71) && (((z) - (entity.getPosZ())) >= 71))) {
 						entity.setMotion((((x) - (entity.getPosX())) / 20), (((y) - (entity.getPosY())) / 16), (((z) - (entity.getPosZ())) / 16));
 					} else if (((((x) - (entity.getPosX())) >= 61) && (((z) - (entity.getPosZ())) >= 61))) {
@@ -73,9 +70,7 @@ public class ODMGearProcedure extends MyTitanModElements.ModElement {
 						entity.setMotion(((x) - (entity.getPosX())), ((y) - (entity.getPosY())), ((z) - (entity.getPosZ())));
 					}
 				} else if ((((y) - (entity.getPosY())) <= 75)) {
-					if (entity instanceof LivingEntity) {
-						entity.setNoGravity((true));
-					}
+					entity.setNoGravity((true));
 					if (((((x) - (entity.getPosX())) >= 71) && (((z) - (entity.getPosZ())) >= 71))) {
 						entity.setMotion((((x) - (entity.getPosX())) / 16), (((y) - (entity.getPosY())) / 16), (((z) - (entity.getPosZ())) / 16));
 					} else if (((((x) - (entity.getPosX())) >= 61) && (((z) - (entity.getPosZ())) >= 61))) {
@@ -92,9 +87,7 @@ public class ODMGearProcedure extends MyTitanModElements.ModElement {
 						entity.setMotion(((x) - (entity.getPosX())), ((y) - (entity.getPosY())), ((z) - (entity.getPosZ())));
 					}
 				} else if ((((z) - (entity.getPosZ())) <= 75)) {
-					if (entity instanceof LivingEntity) {
-						entity.setNoGravity((true));
-					}
+					entity.setNoGravity((true));
 					if (((((x) - (entity.getPosX())) >= 71) && (((z) - (entity.getPosZ())) >= 71))) {
 						entity.setMotion((((x) - (entity.getPosX())) / 16), (((y) - (entity.getPosY())) / 16), (((z) - (entity.getPosZ())) / 16));
 					} else if (((((x) - (entity.getPosX())) >= 61) && (((z) - (entity.getPosZ())) >= 61))) {
@@ -140,9 +133,7 @@ public class ODMGearProcedure extends MyTitanModElements.ModElement {
 					}
 
 					private void run() {
-						if (entity instanceof LivingEntity) {
-							entity.setNoGravity((false));
-						}
+						entity.setNoGravity((false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
 				}.start(world, (int) 100);

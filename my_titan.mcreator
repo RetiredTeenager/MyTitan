@@ -4153,7 +4153,28 @@
       "ids": {},
       "registry_name": "is_shifter_health_not_full",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -4199,6 +4220,25 @@
       "ids": {},
       "registry_name": "entity_eren_human",
       "path": "~/Shifters"
+    },
+    {
+      "name": "DiscIntro7",
+      "type": "musicdisc",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disc_intro_7",
+      "path": "~/Music Discs"
+    },
+    {
+      "name": "EntityShifterEren",
+      "type": "mob",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_shifter_eren"
     }
   ],
   "variable_elements": [
@@ -4627,29 +4667,39 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "disk7",
+      "files": [
+        "intro7"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "entity.my_titan.entity_eren_human": "Eren Yeager",
       "entity.my_titan.gluttonous_titan": "Gluttonous Titan",
+      "item.my_titan.entity_shifter_eren_spawn_egg": "Eren Spawn Egg",
       "item.my_titan.entity_controllable_beast_titan_spawn_egg": "Beast Titan Spawn Egg",
       "key.my_titan.titan_jump": "Titan Jump",
       "item.watashi_no_kyojin.entity_controllable_colossal_titan_spawn_egg": "Colossal TItan Spawn Egg",
       "item.my_titan.auto_unlock_titan_armored": "Titan Serum",
-      "subtitles.s2intro": "",
       "item.my_titan.armor_scout_original_boots": "Scout\u0027s Boots",
+      "subtitles.s2intro": "",
       "item.minecraft.tipped_arrow.effect.potion_raw_titan_serum": "Arrow of Raw Titan Serum",
       "subtitles.ashesonthefire": "",
       "item.my_titan.auto_unlock_titan_colossal": "Titan Serum",
       "item.my_titan.armor_scouts_new_leggings": "Armor Scouts New Leggings",
       "biome.my_titan.biomes_giant_trees": "Forest of Giant Trees",
       "subtitles.armoredtitantransform": "",
-      "key.my_titan.key_binding_titan_2ndary_ability": "Seconday Titan Ability",
       "key.mcreator.key_bind_heal": "Regenerate",
+      "key.my_titan.key_binding_titan_2ndary_ability": "Seconday Titan Ability",
       "subtitles.aotsong": "",
       "death.attack.hardspikes": "%1$s was spiked by the Warhammer Titan",
       "item.my_titan.armor_odm_chestplate": "Armor ODM Body",
+      "subtitles.disk7": "",
       "item.my_titan.disc_intro_1.desc": "Linked Horizon  - Guren no Yumiya",
       "key.my_titan.key_binding_titan_primary_ability": "Primary Titan Ability",
       "subtitles.femaletitanroar": "",
@@ -4708,6 +4758,7 @@
       "item.my_titan.disc_intro_1": "Music Disc",
       "key.mcreator.key_bind_open_selection_gui": "Select Titan",
       "item.my_titan.disc_intro_2": "Music Disc",
+      "item.my_titan.disc_intro_7.desc": "The Rumbling - SiM",
       "item.watashi_no_kyojin.entity_controllable_female_titan_spawn_egg": "Female Titan Spawn Egg",
       "item.my_titan.auto_unlock_titan_jaw": "Titan Serum",
       "item.watashi_no_kyojin.disc_intro_3.desc": "Linked Horizon - Shinzou wo Sasageyo!",
@@ -4720,6 +4771,7 @@
       "subtitles.youseebiggirl": "",
       "item.watashi_no_kyojin.disc_you_see_big_girl.desc": "Hiroyuki Sawano - YOUSEEBIGGIRL/T:T",
       "item.my_titan.disc_ashes": "Music Disc",
+      "item.my_titan.disc_intro_7": "Music Disc",
       "itemGroup.tabcreative_tab_my_titan": "My Titan",
       "item.my_titan.disc_intro_5": "Music Disc",
       "item.watashi_no_kyojin.auto_unlock_titan_female": "Female Titan",
@@ -4783,6 +4835,7 @@
       "entity.my_titan.entity_controllable_colossal_titan": "Colossal Titan",
       "item.watashi_no_kyojin.disc_intro_4.desc": "Yoshiki - Red Swan",
       "item.my_titan.entity_controllable_colossal_titan_spawn_egg": "Colossal Titan Spawn Egg",
+      "entity.my_titan.entity_shifter_eren": "Eren",
       "subtitles.beasttitanroar": "",
       "subtitles.s1intro1": "",
       "key.my_titan.key_titan_primary_attack": "Primary Titan Attack",
@@ -4961,9 +5014,12 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "just_enough_items",
+      "curios",
+      "patchouli",
       "geckolib"
     ],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "forge-1.16.5",
     "credits": "Programming by KillsBoostMyEgo, Models by RetiredTeenager and Jerremy18",
     "modElementsPackage": "net.aot.mytitan",
     "lockBaseModFiles": false

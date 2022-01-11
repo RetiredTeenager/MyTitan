@@ -1,10 +1,11 @@
 package net.aot.mytitan.procedures;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.math.Vec2f;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
@@ -72,10 +73,10 @@ public class CartTitanGUIWhileThisGUIIsOpenTickProcedure extends MyTitanModEleme
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (73))).getItem() == new ItemStack(Items.DIAMOND_HELMET, (int) (1)).getItem())) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
-						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"say hi");
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager()
+						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "say hi");
 			}
 		}
 		if (((new Object() {
@@ -93,10 +94,10 @@ public class CartTitanGUIWhileThisGUIIsOpenTickProcedure extends MyTitanModEleme
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (74))).getItem() == new ItemStack(Items.DIAMOND_HELMET, (int) (1)).getItem())) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
-						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"say hi");
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager()
+						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "say hi");
 			}
 		}
 		if (((new Object() {
@@ -114,10 +115,10 @@ public class CartTitanGUIWhileThisGUIIsOpenTickProcedure extends MyTitanModEleme
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (75))).getItem() == new ItemStack(Items.DIAMOND_HELMET, (int) (1)).getItem())) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
-						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"say hi");
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager()
+						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "say hi");
 			}
 		}
 		if (((new Object() {
@@ -135,10 +136,10 @@ public class CartTitanGUIWhileThisGUIIsOpenTickProcedure extends MyTitanModEleme
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (76))).getItem() == new ItemStack(Items.DIAMOND_HELMET, (int) (1)).getItem())) {
-			if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-				world.getWorld().getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO,
-						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-						"say hi");
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager()
+						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(), "say hi");
 			}
 		}
 	}

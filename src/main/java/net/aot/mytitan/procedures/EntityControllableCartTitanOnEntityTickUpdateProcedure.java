@@ -1,9 +1,9 @@
 package net.aot.mytitan.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.SpawnReason;
@@ -57,15 +57,15 @@ public class EntityControllableCartTitanOnEntityTickUpdateProcedure extends MyTi
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((MyTitanModVariables.WorldVariables.get(world).isCartMinigunOn) == (true))
 				&& ((MyTitanModVariables.WorldVariables.get(world).hasCartMinigunSpawned) == (false)))) {
-			if (world instanceof World && !world.getWorld().isRemote) {
-				Entity entityToSpawn = new EntityCartSeatEntity.CustomEntity(EntityCartSeatEntity.entity, world.getWorld());
+			if (world instanceof ServerWorld) {
+				Entity entityToSpawn = new EntityCartSeatEntity.CustomEntity(EntityCartSeatEntity.entity, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Spawned"), (false));
 			}
 		}

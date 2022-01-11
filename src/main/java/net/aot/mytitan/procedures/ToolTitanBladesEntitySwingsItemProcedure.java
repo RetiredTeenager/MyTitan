@@ -2,6 +2,7 @@ package net.aot.mytitan.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
@@ -46,32 +47,32 @@ public class ToolTitanBladesEntitySwingsItemProcedure extends MyTitanModElements
 		double SwordRandom = 0;
 		SwordRandom = (double) Math.random();
 		if (((SwordRandom) <= 33)) {
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			} else {
-				world.getWorld().playSound(x, y, z,
+				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		} else if ((((SwordRandom) <= 66) && ((SwordRandom) > 33))) {
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 0);
 			} else {
-				world.getWorld().playSound(x, y, z,
+				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 0, false);
 			}
 		} else {
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 2);
 			} else {
-				world.getWorld().playSound(x, y, z,
+				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:sword")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 2, false);
 			}

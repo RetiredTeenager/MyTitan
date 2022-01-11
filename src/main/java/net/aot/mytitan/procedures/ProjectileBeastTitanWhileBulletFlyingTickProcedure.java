@@ -1,8 +1,5 @@
 package net.aot.mytitan.procedures;
 
-import software.bernie.geckolib.entity.IAnimatedEntity;
-import software.bernie.geckolib.animation.builder.AnimationBuilder;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -53,12 +50,12 @@ public class ProjectileBeastTitanWhileBulletFlyingTickProcedure extends MyTitanM
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (entity instanceof IAnimatedEntity) {
+		if (entity instanceof IAnimatable) {
 			new Object() {
 				@OnlyIn(Dist.CLIENT)
 				void playAnimation(Entity entity, String animationID) {
-					IAnimatedEntity aniEntity = (IAnimatedEntity) entity;
-					aniEntity.getAnimationManager().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
+					IAnimatable aniEntity = (IAnimatable) entity;
+					aniEntity.getFactory().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
 				}
 			}.playAnimation(entity, "spin");
 		}

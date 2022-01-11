@@ -1,8 +1,5 @@
 package net.aot.mytitan.procedures;
 
-import software.bernie.geckolib.entity.IAnimatedEntity;
-import software.bernie.geckolib.animation.builder.AnimationBuilder;
-
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -41,12 +38,12 @@ public class ColossalTitanEnable2ndAbilityProcedure extends MyTitanModElements.M
 		IWorld world = (IWorld) dependencies.get("world");
 		double randommoment = 0;
 		double countup = 0;
-		if ((entity.getRidingEntity()) instanceof IAnimatedEntity) {
+		if ((entity.getRidingEntity()) instanceof IAnimatable) {
 			new Object() {
 				@OnlyIn(Dist.CLIENT)
 				void playAnimation(Entity entity, String animationID) {
-					IAnimatedEntity aniEntity = (IAnimatedEntity) entity;
-					aniEntity.getAnimationManager().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
+					IAnimatable aniEntity = (IAnimatable) entity;
+					aniEntity.getFactory().get("controller").setAnimation(new AnimationBuilder().addAnimation(animationID, (false)));
 				}
 			}.playAnimation((entity.getRidingEntity()), "kickplaceboomboomR");
 		}
@@ -70,8 +67,8 @@ public class ColossalTitanEnable2ndAbilityProcedure extends MyTitanModElements.M
 			}
 
 			private void run() {
-				if (world instanceof World && !world.getWorld().isRemote) {
-					world.getWorld().createExplosion(null,
+				if (world instanceof World && !((World) world).isRemote) {
+					((World) world).createExplosion(null,
 							(int) ((entity.getRidingEntity()).world
 									.rayTraceBlocks(new RayTraceContext((entity.getRidingEntity()).getEyePosition(1f),
 											(entity.getRidingEntity()).getEyePosition(1f).add(

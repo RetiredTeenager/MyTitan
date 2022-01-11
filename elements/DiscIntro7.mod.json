@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc7",
+    "name": "Music Disc",
+    "description": "The Rumbling - SiM",
+    "creativeTab": {
+      "value": "CUSTOM:CreativeTabMyTitan"
+    },
+    "music": {
+      "value": "CUSTOM:disk7"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

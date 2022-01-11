@@ -3,6 +3,7 @@ package net.aot.mytitan.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
@@ -65,12 +66,12 @@ public class KeyBindHealOnKeyPressedProcedure extends MyTitanModElements.ModElem
 						((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE, x, y, z, (int) 5, 1, 1, 1, 1);
 					}
 				}
-				if (!world.getWorld().isRemote) {
-					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:healingsfx")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1);
 				} else {
-					world.getWorld().playSound(x, y, z,
+					((World) world).playSound(x, y, z,
 							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:healingsfx")),
 							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
@@ -86,7 +87,7 @@ public class KeyBindHealOnKeyPressedProcedure extends MyTitanModElements.ModElem
 					});
 				}
 			} else {
-				if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You must be a titan shifter to use heal"), (true));
 				}
 			}

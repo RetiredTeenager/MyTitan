@@ -25,7 +25,7 @@ public class ProcedureBeastTitanRockThrowMainProcedure extends MyTitanModElement
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity) {
 			Entity _ent = entity;
-			if (!_ent.world.isRemote) {
+			if (!_ent.world.isRemote()) {
 				ProjectileBeastTitanItem.shoot(_ent.world, (LivingEntity) entity, new Random(), (float) 3, (float) 20, (int) 25);
 			}
 		}

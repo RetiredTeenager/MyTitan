@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -13,6 +14,7 @@ import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
 
 import net.aot.mytitan.entity.EntityControllableWarhammerTitanEntity;
@@ -53,24 +55,28 @@ public class WarHammerTransformProcedure extends MyTitanModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (10); index0++) {
-			if (world instanceof ServerWorld)
-				((ServerWorld) world).addLightningBolt(new LightningBoltEntity(world.getWorld(), (int) x, (int) y, (int) z, true));
+			if (world instanceof ServerWorld) {
+				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+				_ent.setEffectOnly(true);
+				((World) world).addEntity(_ent);
+			}
 		}
-		if (!world.getWorld().isRemote) {
-			world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+		if (world instanceof World && !world.isRemote()) {
+			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:generictransform")),
 					SoundCategory.NEUTRAL, (float) 5, (float) 1);
 		} else {
-			world.getWorld().playSound(x, y, z,
+			((World) world).playSound(x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:generictransform")),
 					SoundCategory.NEUTRAL, (float) 5, (float) 1, false);
 		}
-		if (world instanceof World && !world.getWorld().isRemote) {
+		if (world instanceof ServerWorld) {
 			Entity entityToSpawn = new EntityControllableWarhammerTitanEntity.CustomEntity(EntityControllableWarhammerTitanEntity.entity,
-					world.getWorld());
+					(World) world);
 			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 			world.addEntity(entityToSpawn);
 		}

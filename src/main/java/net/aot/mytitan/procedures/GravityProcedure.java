@@ -23,9 +23,7 @@ public class GravityProcedure extends MyTitanModElements.ModElement {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity) {
-			entity.setNoGravity((false));
-		}
+		entity.setNoGravity((false));
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 60, (int) 1, (true), (false)));
 	}

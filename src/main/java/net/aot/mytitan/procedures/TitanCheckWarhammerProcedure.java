@@ -2,6 +2,7 @@ package net.aot.mytitan.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
@@ -62,21 +63,21 @@ public class TitanCheckWarhammerProcedure extends MyTitanModElements.ModElement 
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You feel the power of the Warhammer Titan manifest in your blood"),
 						(true));
 			}
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:heartbeat")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			} else {
-				world.getWorld().playSound(x, y, z,
+				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("my_titan:heartbeat")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		} else {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You aren't this titans holder"), (true));
 			}
 		}

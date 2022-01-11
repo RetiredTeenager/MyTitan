@@ -62,7 +62,7 @@ public class ProcedureTransformProcedure extends MyTitanModElements.ModElement {
 					.orElse(new MyTitanModVariables.PlayerVariables())).isTransformed) == (false))) {
 				if ((((entity.getCapability(MyTitanModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new MyTitanModVariables.PlayerVariables())).selectedTitan) == 0)) {
-					if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+					if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 						((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You don't hold any titans."), (true));
 					}
 				} else {
@@ -164,14 +164,14 @@ public class ProcedureTransformProcedure extends MyTitanModElements.ModElement {
 							}
 						}
 					} else {
-						if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+						if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 							((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You must have full health to transform."), (true));
 						}
 					}
 				}
 			}
 		} else {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You must not be wearing armor to transform"), (true));
 			}
 		}

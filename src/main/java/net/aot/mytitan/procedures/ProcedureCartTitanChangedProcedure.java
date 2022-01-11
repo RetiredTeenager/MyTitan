@@ -32,7 +32,7 @@ public class ProcedureCartTitanChangedProcedure extends MyTitanModElements.ModEl
 		IWorld world = (IWorld) dependencies.get("world");
 		MyTitanModVariables.WorldVariables.get(world).isCartMinigunOn = (boolean) (true);
 		MyTitanModVariables.WorldVariables.get(world).syncData(world);
-		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Has been set to true"), (true));
 		}
 	}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.biting": {
+			"animation_length": 99,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0833": {
+							"vector": [0, 0, 0]
+						},
+						"0.4583": {
+							"vector": [30, 0, 0]
+						}
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-12.5, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-54.37, 0, 0]
+						},
+						"0.3333": {
+							"vector": [-100, 0, 0]
+						},
+						"0.375": {
+							"vector": [-100, 0, 0]
+						},
+						"0.6667": {
+							"vector": [-107.5, 45, 0]
+						},
+						"1.2083": {
+							"vector": [-100, 45, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

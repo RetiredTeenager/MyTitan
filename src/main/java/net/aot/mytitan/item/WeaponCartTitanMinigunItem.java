@@ -5,8 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -33,10 +32,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
 
 import net.aot.mytitan.itemgroup.CreativeTabMyTitanItemGroup;
+import net.aot.mytitan.entity.renderer.WeaponCartTitanMinigunRenderer;
 import net.aot.mytitan.MyTitanModElements;
 
 import java.util.Random;
@@ -51,19 +49,13 @@ public class WeaponCartTitanMinigunItem extends MyTitanModElements.ModElement {
 			.size(0.5f, 0.5f)).build("entitybulletweapon_cart_titan_minigun").setRegistryName("entitybulletweapon_cart_titan_minigun");
 	public WeaponCartTitanMinigunItem(MyTitanModElements instance) {
 		super(instance, 28);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new WeaponCartTitanMinigunRenderer.ModelRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> arrow);
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
@@ -186,7 +178,7 @@ public class WeaponCartTitanMinigunItem extends MyTitanModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-			Entity entity = this.getShooter();
+			Entity entity = this.func_234616_v_();
 			if (this.inGround) {
 				this.remove();
 			}

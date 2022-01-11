@@ -1,5 +1,34 @@
 package net.aot.mytitan;
 
+import net.minecraftforge.fml.network.PacketDistributor;
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.util.FakePlayer;
+import net.minecraftforge.common.capabilities.ICapabilitySerializable;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.common.capabilities.CapabilityInject;
+import net.minecraftforge.common.capabilities.Capability;
+
+import net.minecraft.world.storage.WorldSavedData;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Direction;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.nbt.INBT;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.Minecraft;
+
 import java.util.function.Supplier;
 
 public class MyTitanModVariables {
@@ -17,7 +46,7 @@ public class MyTitanModVariables {
 
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		if (!event.getPlayer().world.isRemote) {
+		if (!event.getPlayer().world.isRemote()) {
 			WorldSavedData mapdata = MapVariables.get(event.getPlayer().world);
 			WorldSavedData worlddata = WorldVariables.get(event.getPlayer().world);
 			if (mapdata != null)
@@ -31,7 +60,7 @@ public class MyTitanModVariables {
 
 	@SubscribeEvent
 	public void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-		if (!event.getPlayer().world.isRemote) {
+		if (!event.getPlayer().world.isRemote()) {
 			WorldSavedData worlddata = WorldVariables.get(event.getPlayer().world);
 			if (worlddata != null)
 				MyTitanMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
@@ -80,14 +109,14 @@ public class MyTitanModVariables {
 
 		public void syncData(IWorld world) {
 			this.markDirty();
-			if (!world.getWorld().isRemote)
-				MyTitanMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.getWorld().dimension::getType),
+			if (world instanceof World && !world.isRemote())
+				MyTitanMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(((World) world)::getDimensionKey),
 						new WorldSavedDataSyncMessage(1, this));
 		}
 		static WorldVariables clientSide = new WorldVariables();
 		public static WorldVariables get(IWorld world) {
-			if (world.getWorld() instanceof ServerWorld) {
-				return ((ServerWorld) world.getWorld()).getSavedData().getOrCreate(WorldVariables::new, DATA_NAME);
+			if (world instanceof ServerWorld) {
+				return ((ServerWorld) world).getSavedData().getOrCreate(WorldVariables::new, DATA_NAME);
 			} else {
 				return clientSide;
 			}
@@ -142,13 +171,14 @@ public class MyTitanModVariables {
 
 		public void syncData(IWorld world) {
 			this.markDirty();
-			if (!world.getWorld().isRemote)
+			if (world instanceof World && !world.isRemote())
 				MyTitanMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
 		}
 		static MapVariables clientSide = new MapVariables();
 		public static MapVariables get(IWorld world) {
-			if (world.getWorld() instanceof ServerWorld) {
-				return world.getWorld().getServer().getWorld(DimensionType.OVERWORLD).getSavedData().getOrCreate(MapVariables::new, DATA_NAME);
+			if (world instanceof IServerWorld) {
+				return ((IServerWorld) world).getWorld().getServer().getWorld(World.OVERWORLD).getSavedData().getOrCreate(MapVariables::new,
+						DATA_NAME);
 			} else {
 				return clientSide;
 			}
@@ -296,21 +326,21 @@ public class MyTitanModVariables {
 	}
 	@SubscribeEvent
 	public void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-		if (!event.getPlayer().world.isRemote)
+		if (!event.getPlayer().world.isRemote())
 			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
 					.syncPlayerVariables(event.getPlayer());
 	}
 
 	@SubscribeEvent
 	public void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-		if (!event.getPlayer().world.isRemote)
+		if (!event.getPlayer().world.isRemote())
 			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
 					.syncPlayerVariables(event.getPlayer());
 	}
 
 	@SubscribeEvent
 	public void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-		if (!event.getPlayer().world.isRemote)
+		if (!event.getPlayer().world.isRemote())
 			((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
 					.syncPlayerVariables(event.getPlayer());
 	}

@@ -102,203 +102,203 @@ public class OverlayShifterOverlay extends MyTitanModElements.ModElement {
 			if (OverlayifTitanProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				if (KillmeProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/1.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme2Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/2.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/3.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme4Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/4.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme5Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/5.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme6Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/6.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme7Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/7.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme8Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/8.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme9Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/9.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme10Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/10.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme11Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/11.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme12Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/12.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme13Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/13.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme14Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/14.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme15Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/15.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme16Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/16.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme17Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/17.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme18Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/18.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme19Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/19.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme20Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/20.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme21Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/21.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme22Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/22.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme23Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/23.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme24Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/24.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme25Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/25.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme26Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/26.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme27Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/27.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme28Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/28.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme29Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/29.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme30Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/30.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme31Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/31.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme32Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/32.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme33Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/33.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme34Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/34.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme35Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/35.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme36Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/36.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme37Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/37.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme38Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/38.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme39Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/39.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme40Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/40.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme41Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/41.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme42Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/42.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme43Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/43.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme44Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/44.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme45Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/45.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme46Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/46.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme47Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/47.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme48Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/48.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme49Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/49.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 				if (Killme50Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("my_titan:textures/50.png"));
-					Minecraft.getInstance().ingameGUI.blit(posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + 68, 0, 0, 52, 15, 52, 15);
 				}
 			}
 			RenderSystem.depthMask(true);
